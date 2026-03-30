@@ -1,0 +1,36 @@
+### .gitignore
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Virtualenv
+venv/
+
+# 專案參數檔
+.env
+
+# Vagrant
+.vagrant/
+
+# Django
+*.sqlite3
+staticfiles/
+
+
+# macOS
+.DS_Store
+
+# VSCode
+.vscode/
+
+# Logs
+*.log
+
+
+# Docker
+.dockerignore
+docker-compose.override.yml 
+
+# 本地專案
+*.sh.local

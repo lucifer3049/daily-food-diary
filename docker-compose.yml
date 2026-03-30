@@ -1,0 +1,30 @@
+# docker-compose.yml
+services:
+  db:
+    image: postgres:15
+    restart: always
+    env_file:
+      - .env
+    environment:
+      POSTGRES_DB: ${DB_NAME}
+      POSTGRES_USER: ${DB_USER}
+      POSTGRES_PASSWORD: ${DB_PASSWORD}
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    ports:
+      - "5444:5432"  # 要與PostgreSQL綁定
+
+  web:
+    build: .
+    command: python manage.py runserver 0.0.0.0:8999
+    volumes:
+      - .:/app
+    ports:
+      - "8999:8999"
+    env_file:
+      - .env
+    depends_on:
+      - db
+
+volumes:
+  postgres_data:
