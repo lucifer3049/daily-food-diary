@@ -34,3 +34,6 @@ docker-compose.override.yml
 
 # 本地專案
 *.sh.local
+
+# 筆記
+筆記/

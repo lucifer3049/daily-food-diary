@@ -1,5 +1,3 @@
-# 🥗 Daily Food Diary
-
 > 每日飲食紀錄 Web App — 幫助你追蹤飲食習慣、管理健康目標。
 
 ## 專案簡介
@@ -8,13 +6,14 @@
 
 ## 功能特色
 
-- 📝 新增 / 編輯 / 刪除飲食紀錄
-- 📊 每日飲食熱量紀錄分析
+- 新增 / 編輯 / 刪除飲食紀錄
+- 每日飲食熱量紀錄分析
 
 
 ## 技術架構
 
 - 後端：Django + Python
+- 前端 : Vue + Vite
 - 資料庫:PostgreSQL
 - 環境部屬: Vagrant + Docker
 - AI工具: OpenAI

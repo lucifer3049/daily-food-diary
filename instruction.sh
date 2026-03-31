@@ -12,6 +12,7 @@ cd /vagrant # 進入專案目錄
 docker compose run web django-admin startproject my_daily_food # 建立專案
 
 docker compose up -d # 啟動專案
+docker compose up --build  # 啟動專案 重新建置
 
 exit # 退出虛擬機
 
@@ -33,4 +34,7 @@ docker compose logs -f # 查看docker log
 docker compose exec web bash # 進入django
 docker exec -it vagrant-web-1 python manage.py migrate  # 在Django container 裡面建立資料庫
 
+# Django 
 python3 -c "from django.core.signing import get_cookie_signer; from django.utils.crypto import get_random_string; print(get_random_string(50))"  # django 產生密鑰
+
+python3 manage.py createsuperuser # 建立管理者帳號
