@@ -92,9 +92,9 @@ AUTH_PASSWORD_VALIDATORS = [
 ]
 
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'zh-Hant' # 設定繁體中文
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Asia/Taipei' # 設定台北時區
 
 USE_I18N = True
 

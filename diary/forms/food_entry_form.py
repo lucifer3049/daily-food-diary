@@ -1,6 +1,6 @@
 from django import forms
 from django.utils import timezone
-from .food_diary_models import FoodEntry
+from ..models import FoodEntry
 
 
 class FoodEntryForm(forms.ModelForm):

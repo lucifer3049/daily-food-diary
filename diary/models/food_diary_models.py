@@ -15,7 +15,7 @@ class FoodDiary(models.Model):
 
     # 食物資訊
     user = models.ForeignKey(User, on_delete=models.CASCADE, related_name='food_diaries', verbose_name='使用者')
-    food_name = models.CharField(verbose_name='食物名稱')
+    food_name = models.CharField(verbose_name='食物名稱', max_length=200)
     food_image = models.ImageField(upload_to='food_photos/%Y/%m/%d/', blank=True, null=True, verbose_name='食物圖片')
 
     # 營養和份量資訊

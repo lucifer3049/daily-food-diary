@@ -1,4 +1,8 @@
 from django.contrib import admin
-# from .models import Post
+from .models import FoodDiary, NutritionGoal
 
-# admin.site.register(Post) # 註冊admin
+
+
+# 註冊model到admin後台管理
+admin.site.register(FoodDiary)
+admin.site.register(NutritionGoal)
