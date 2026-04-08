@@ -126,3 +126,41 @@ OPEN_AI_KEY # API金鑰
     ├── templates/            # 前端模板 (HTML)
     ├── migrations/           # 資料庫遷移紀錄
     └── tests/                # 單元測試
+
+```
+
+# 分支管理
+
+專案採用 git flow 分支管理的方式，確保程式碼穩定性與開發的靈活性
+
+# 分支定義
+- develop: 開發環境
+- uat: 測試環境
+- intt: 使用者測試環境
+- staging: 上版前最終確認環境
+- master: 上版環境
+
+# 測試環境建立
+git checkout develop
+git pull origin develop
+
+# 分支建立
+git checkout -b feature/your-feature-name 
+
+# 分支開發與合併
+git add .
+git commit -m "feat: 描述你的新功能"
+git push -u origin feature/your-feature-name
+
+git checkout dev
+git merge feature/your-feature-name
+git push origin dev
+
+# 分支刪除
+git branch -d feature/your-feature-name
+
+# 分支名稱更改
+git branch -m master
+
+# 刪除遠端分支
+git push origin --delete main 
