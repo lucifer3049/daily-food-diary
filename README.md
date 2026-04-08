@@ -64,6 +64,24 @@ docker compose exec web python3 manage.py check
 # 12. 執行測試腳本
 docker compose exec web python3 manage.py test
 
+# 13. 關閉 Docker 容器
+docker compose stop
+
+# 14. 刪除 Docker 容器
+docker compose down
+
+# 15. 離開虛擬機
+exit
+
+# 16. Vagrant 休眠
+vagrant suspend
+
+# 17. Vagrant 關機
+vagrant halt
+
+# 18. Vagrant 刪除
+vagrant destroy
+
 打開瀏覽器前往 `http://localhost:8999` 即可使用。
 
 ## 環境變數說明
